@@ -1,5 +1,7 @@
 # Pinar del Río · Demo de gestión residencial
 
+Demo pública: [pinar-de-rio.vercel.app](https://pinar-de-rio.vercel.app). Despliegue en Vercel conectado a `main`; detalles en [docs/DESPLIEGUE.md](docs/DESPLIEGUE.md).
+
 Demo en React, TypeScript y Vite con dos perspectivas principales: condómino y administradora; el perfil de empleado está disponible como opción secundaria. El acceso es simulado y no requiere contraseña ni clave de Gemini.
 
 ## Ejecutar
