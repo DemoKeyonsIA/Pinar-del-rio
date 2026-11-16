@@ -9,4 +9,5 @@ coverage/
 
 # Local editor artifacts
 .aistudio/
+.vercel/
 
