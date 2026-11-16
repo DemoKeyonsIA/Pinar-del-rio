@@ -1,0 +1,8 @@
+{
+  "name": "Pinar Del Rio",
+  "description": "Portal oficial de condóminos y administración de Residencial Pinar del Río: noticias, eventos, reservas de áreas comunes y pagos de cuotas en línea.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

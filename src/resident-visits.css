@@ -1,0 +1,316 @@
+.resident-visits {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  background: #fff;
+  color: #0f172a;
+  min-width: 0;
+}
+.visit-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.visit-heading > div {
+  min-width: 0;
+}
+.visit-kicker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #065f46;
+  font-size: 12px;
+  font-weight: 600;
+}
+.visit-heading h3 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.visit-heading p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 65ch;
+}
+.resident-visits button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.resident-visits button.visit-primary {
+  background: #496192;
+  color: white;
+  border-color: #496192;
+}
+.resident-visits button.visit-primary:hover {
+  background: #3f5380;
+}
+.visit-heading > button {
+  flex-shrink: 0;
+}
+.resident-visits :focus-visible {
+  outline: 3px solid #496192;
+  outline-offset: 3px;
+}
+.visit-form {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+.visit-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.visit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 0;
+}
+.visit-form :is(input, textarea) {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 10px;
+  background: white;
+  color: #0f172a;
+  font: inherit;
+  font-weight: 400;
+}
+.visit-form textarea {
+  resize: vertical;
+}
+.visit-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+.visit-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+.visit-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.visit-card-top,
+.visit-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.visit-card-top {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.visit-person {
+  min-width: 0;
+}
+.visit-person > svg,
+.visit-date > svg {
+  flex-shrink: 0;
+  color: #475569;
+}
+.visit-person h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.visit-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #dcfce7;
+  color: #166534;
+}
+.visit-badge.revoked {
+  color: #783d42;
+  background: #f0d0cb;
+}
+.visit-badge.past {
+  color: #475569;
+  background: #f1f5f9;
+}
+.visit-date {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.visit-notes {
+  font-size: 14px;
+  white-space: pre-wrap;
+  margin: 12px 0;
+}
+.resident-visits .visit-meta {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #475569;
+  margin-top: 12px;
+}
+.visit-count {
+  font-size: 13px;
+  color: #475569;
+  margin-top: 24px;
+}
+.visit-empty {
+  text-align: center;
+  padding: 28px 12px;
+  color: #475569;
+  font-size: 14px;
+}
+.visit-empty > svg {
+  margin: 0 auto 12px;
+}
+.visit-empty > p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.visit-empty > span {
+  display: block;
+  font-size: 13px;
+}
+.visit-history {
+  margin-top: 24px;
+}
+.visit-history summary {
+  min-height: 44px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #334155;
+  font-size: 14px;
+}
+.resident-visits button.visit-revoke-button {
+  color: #783d42;
+  margin-top: 16px;
+}
+.resident-visits button.visit-danger {
+  background: #f0d0cb;
+  color: #562e33;
+  border-color: #ce635d;
+}
+.visit-success,
+.visit-error {
+  padding: 14px;
+  margin-top: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.visit-success {
+  background: #dcfce7;
+  color: #166534;
+}
+.visit-error {
+  background: #f0d0cb;
+  color: #562e33;
+}
+@media (max-width: 640px) {
+  .resident-visits {
+    padding: 18px;
+  }
+  .visit-heading {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .visit-heading > button {
+    width: 100%;
+  }
+  .visit-fields,
+  .visit-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .visit-form {
+    padding: 14px;
+  }
+  .visit-form :is(input, textarea) {
+    font-size: 16px;
+  }
+  .visit-card {
+    padding: 16px;
+  }
+  .visit-actions > button {
+    flex: 1;
+  }
+}
+
+.household-tabs {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  padding: 4px;
+  gap: 4px;
+  background: #e2e8f0;
+  border-radius: 16px;
+}
+.household-tabs > button {
+  flex: 1;
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.household-tabs > button[aria-selected="true"] {
+  background: #496192;
+  color: #fff;
+}
+.household-tabs > button:focus-visible {
+  outline: 3px solid #496192;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px white;
+}
+.household-tab-panel {
+  min-width: 0;
+}
+.household-tab-panel[hidden] {
+  display: none;
+}
+@media (max-width: 380px) {
+  .household-tabs > button {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+}
+@media (forced-colors: active) {
+  .household-tabs > button {
+    border: 1px solid ButtonText;
+  }
+  .household-tabs > button[aria-selected="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -3px;
+  }
+}

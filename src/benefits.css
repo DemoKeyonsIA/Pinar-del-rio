@@ -1,0 +1,75 @@
+.benefits-view .list-heading {
+  align-items: center;
+  gap: 16px;
+}
+.benefits-view .list-heading p,
+.benefit-context {
+  color: #5d667a;
+  line-height: 1.6;
+}
+.benefit-context {
+  margin: 12px 0 24px;
+  max-width: 75ch;
+}
+.benefit-breakdown {
+  margin: 24px 0;
+  border-block: 1px solid #dce0e8;
+}
+.benefit-breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+}
+.benefit-breakdown dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.benefit-breakdown > div:last-child {
+  border-top: 1px solid #dce0e8;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3f5380;
+}
+.benefit-months {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.benefit-check {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+.benefit-check input {
+  width: 20px !important;
+  height: 20px;
+  flex-shrink: 0;
+}
+.benefit-actions {
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .benefit-months {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .benefits-view .list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .benefit-breakdown {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .benefit-months {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .benefit-breakdown > div {
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+}

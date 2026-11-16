@@ -1,0 +1,1101 @@
+.vac-workspace {
+  min-width: 0;
+}
+.vac-workspace-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.vac-view-tabs {
+  display: flex;
+  padding: 4px;
+  background: #eaeaeb;
+  border-radius: 999px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.vac-view-tabs > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #555667;
+  min-height: 40px;
+}
+.vac-view-tabs > button[aria-selected="true"] {
+  color: #10122a;
+  background: #fff;
+  box-shadow: 0 1px 4px #10122a0c;
+  font-weight: 600;
+}
+.vac-view-tabs > button > span {
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  background: #d9d6ed;
+}
+.vac-toolbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.vac-team-filter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #d2d2d5;
+  background: #fff;
+  padding: 0 12px;
+  border-radius: 999px;
+  max-width: 210px;
+}
+.vac-team-filter select {
+  border: 0;
+  background: transparent;
+  color: #3a3c4e;
+  padding: 11px 0;
+  max-width: 170px;
+  min-width: 110px;
+  font: inherit;
+  font-size: 12px;
+}
+.vac-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: #fff;
+  border: 1px solid #e0e1e5;
+  margin-bottom: 24px;
+}
+.vac-summary > button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  border: 0;
+  background: none;
+  padding: 18px 20px;
+  color: #10122a;
+  min-width: 0;
+}
+.vac-summary > button + button {
+  border-left: 1px solid #e0e1e5;
+}
+.vac-summary > button:hover {
+  background: #f8faff;
+}
+.vac-summary-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #e0e7f1;
+  border-radius: 50%;
+  color: #35466e;
+  flex-shrink: 0;
+}
+.vac-summary-icon.review {
+  background: #d9d6ed;
+}
+.vac-summary > button > span:nth-child(2) {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vac-summary strong {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.vac-summary small {
+  font-size: 11px;
+  color: #6b6d7e;
+}
+.vac-summary > button > svg {
+  margin-left: auto;
+  color: #6b6d7e;
+}
+.vac-filter-context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -8px 0 20px;
+  font-size: 12px;
+  color: #555667;
+  flex-wrap: wrap;
+}
+.vac-filter-context strong {
+  font-weight: 500;
+}
+.vac-tab-panel[hidden] {
+  display: none;
+}
+.vac-tab-panel:focus-visible {
+  outline-offset: 6px;
+}
+.vac-calendar-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 20px;
+  align-items: start;
+}
+.vac-calendar-surface {
+  background: #fff;
+  border: 1px solid #e0e1e5;
+  padding: 20px;
+  min-width: 0;
+}
+.vac-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.vac-month-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.025em;
+}
+.vac-month-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.vac-month-controls > button {
+  border: 1px solid #e0e1e5;
+  background: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.vac-month-controls > button:hover {
+  background: #e0e7f1;
+}
+.vac-month-controls > .vac-today-button {
+  width: auto;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+.vac-month-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6b6d7e;
+}
+.vac-month-picker input {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid #c7c8cb;
+  border-radius: 8px;
+  max-width: 190px;
+}
+.vac-workspace .vac-calendar-grid {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 4px;
+  width: 100%;
+  margin: 0;
+}
+.vac-workspace .vac-calendar-grid th {
+  background: none;
+  border: 0;
+  padding: 4px 0 10px;
+  text-align: center;
+  font-size: 11px;
+  color: #6b6d7e;
+  font-weight: 400;
+}
+.vac-workspace .vac-calendar-grid td {
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+  max-width: none;
+}
+.vac-workspace .vac-calendar-grid tbody tr:hover {
+  background: none;
+}
+.vac-day {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  background: #fafafb;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 76px;
+  padding: 7px 5px;
+  text-align: left;
+  border-radius: 8px;
+  min-width: 0;
+  color: #10122a;
+}
+.vac-day:hover {
+  background: #e9eff8;
+}
+.vac-day.outside {
+  background: transparent;
+  color: #626575;
+}
+.vac-day.selected {
+  background: #e0e7f1;
+  border-color: #496192;
+}
+.vac-day time {
+  align-self: flex-start;
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 50%;
+}
+.vac-day time.today {
+  background: #496192;
+  color: #fff;
+}
+.vac-day.outside time {
+  color: #626575;
+}
+.vac-day-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.vac-day-entry {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
+  line-height: 1.4;
+  color: #35466e;
+}
+.vac-day-entry > span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #496192;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.vac-day-entry.pending {
+  color: #615780;
+}
+.vac-day-entry.pending > span {
+  background: #8b7db0;
+}
+.vac-day-more {
+  font-size: 9px;
+  color: #6b6d7e;
+}
+.vac-mobile-day-count {
+  display: none;
+}
+.vac-calendar-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #6b6d7e;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e1e5;
+}
+.vac-calendar-legend > span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.vac-calendar-legend i {
+  width: 6px;
+  height: 6px;
+  background: #496192;
+  border-radius: 50%;
+  display: block;
+}
+.vac-calendar-legend i.pending {
+  background: #8b7db0;
+}
+.vac-keyboard-hint {
+  font-size: 9px;
+  flex-basis: 100%;
+}
+.vac-agenda {
+  border: 1px solid #e0e1e5;
+  background: #fff;
+  min-width: 0;
+  overflow: hidden;
+}
+.vac-agenda > header {
+  padding: 20px;
+  border-bottom: 1px solid #e0e1e5;
+}
+.vac-agenda > header .eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+.vac-agenda > header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.vac-agenda > header h3 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.vac-agenda > header button {
+  border: 0;
+  background: none;
+  padding: 5px;
+  color: #6b6d7e;
+}
+.vac-agenda > header p {
+  font-size: 11px;
+  color: #6b6d7e;
+  margin-top: 6px;
+}
+.vac-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 36px 24px;
+  gap: 12px;
+  color: #6b6d7e;
+}
+.vac-empty > svg {
+  color: #9899a3;
+}
+.vac-empty h3 {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.vac-empty p {
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 330px;
+}
+.vac-empty .text-action {
+  margin-top: 4px;
+  font-size: 12px;
+}
+.vac-person-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: #e0e7f1;
+  color: #35466e;
+  font-size: 11px;
+  font-weight: 500;
+}
+.vac-agenda-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #eaeaeb;
+  padding: 16px;
+  width: 100%;
+}
+.vac-agenda-item:hover {
+  background: #f8faff;
+}
+.vac-agenda-item > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.vac-agenda-item strong {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  line-height: 1.6;
+}
+.vac-agenda-item small {
+  display: block;
+  font-size: 10px;
+  color: #6b6d7e;
+  margin: 4px 0 8px;
+}
+.vac-agenda-item > svg {
+  margin-top: 7px;
+  color: #6b6d7e;
+}
+.vac-clear-date {
+  padding: 14px 20px;
+  border: 0;
+  background: #fafafb;
+  color: #35466e;
+  width: 100%;
+  text-align: left;
+  font-size: 11px !important;
+}
+.vac-requests-surface,
+.vac-balance-surface {
+  background: #fff;
+  border: 1px solid #e0e1e5;
+}
+.vac-request-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+.vac-request-toolbar h2,
+.vac-section-title h2 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.vac-request-toolbar p,
+.vac-section-title p {
+  font-size: 12px;
+  color: #6b6d7e;
+  margin-top: 6px;
+}
+.vac-request-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vac-request-controls > select {
+  background: #fff;
+  border: 1px solid #c7c8cb;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 12px;
+  min-height: 40px;
+}
+.vac-query {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e0e1e5;
+  border-radius: 999px;
+  padding: 10px 12px;
+  color: #6b6d7e;
+}
+.vac-query input {
+  width: 150px;
+  min-width: 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 12px;
+  outline: none;
+  color: #10122a;
+}
+.vac-result-count {
+  padding: 0 24px 14px;
+  font-size: 11px;
+  color: #6b6d7e;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.vac-result-count .text-action {
+  font-size: 11px;
+}
+.vac-request-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: 0;
+  border-top: 1px solid #eaeaeb;
+  text-align: left;
+}
+.vac-request-row:hover {
+  background: #f8faff;
+}
+.vac-request-person {
+  flex: 1;
+  min-width: 0;
+}
+.vac-request-person strong {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+.vac-request-person small {
+  display: block;
+  font-size: 12px;
+  color: #6b6d7e;
+  margin-top: 5px;
+}
+.vac-request-days {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  color: #555667;
+  min-width: 60px;
+}
+.vac-request-days strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+.vac-request-days small {
+  font-size: 11px;
+}
+.vac-request-row > .badge {
+  min-width: 80px;
+  justify-content: center;
+}
+.vac-request-open {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  color: #35466e;
+  min-width: 80px;
+  justify-content: flex-end;
+}
+.vac-section-title {
+  padding: 24px 24px 0;
+}
+.vac-balance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 24px;
+  gap: 20px;
+}
+.vac-balance-card {
+  border: 1px solid #e0e1e5;
+  padding: 24px;
+  min-width: 0;
+}
+.vac-balance-card > header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.vac-balance-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.vac-balance-card header p {
+  font-size: 10px;
+  color: #6b6d7e;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+.vac-available {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 24px 0 20px;
+}
+.vac-available strong {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.vac-available span {
+  font-size: 12px;
+  color: #6b6d7e;
+}
+.vac-balance-card dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 20px;
+  border-top: 1px solid #e0e1e5;
+  padding-top: 16px;
+}
+.vac-balance-card dt {
+  font-size: 10px;
+  color: #6b6d7e;
+  margin-bottom: 6px;
+}
+.vac-balance-card dd {
+  margin: 0;
+  font-size: 16px;
+}
+.vac-balance-card > .text-action {
+  font-size: 12px;
+}
+.vac-explanation {
+  margin: 0 24px 24px;
+  border-top: 1px solid #e0e1e5;
+  padding-top: 16px;
+  font-size: 12px;
+  color: #6b6d7e;
+}
+.vac-explanation summary {
+  cursor: pointer;
+  color: #35466e;
+  line-height: 1.7;
+}
+.vac-explanation p {
+  margin-top: 12px;
+  max-width: 700px;
+  line-height: 1.8;
+}
+.vac-workspace .success-message > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vac-detail-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.vac-detail-heading > div {
+  flex: 1;
+}
+.vac-detail-heading h3 {
+  font-size: 16px;
+}
+.vac-detail-heading p {
+  font-size: 12px;
+  color: #6b6d7e;
+  margin: 5px 0 0;
+}
+.vac-detail-days {
+  background: #e0e7f1;
+  padding: 18px 20px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.vac-detail-days strong {
+  font-size: 28px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.vac-detail-note {
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e1e5;
+}
+.vac-detail-note strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+.vac-detail-note p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+  white-space: pre-wrap;
+}
+.vac-detail-note small {
+  display: block;
+  margin-top: 8px;
+  color: #6b6d7e;
+  font-size: 11px;
+}
+.vac-decision-form {
+  margin-top: 24px;
+}
+.vac-decision-form > .form-actions {
+  margin-top: 0;
+}
+@media (min-width: 1600px) {
+  .vac-calendar-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+  .vac-day {
+    height: 92px;
+    padding: 10px;
+  }
+  .vac-day-entry {
+    font-size: 11px;
+  }
+  .vac-day-more {
+    font-size: 10px;
+  }
+  .vac-agenda-item strong {
+    font-size: 14px;
+  }
+  .vac-agenda-item small {
+    font-size: 12px;
+  }
+  .vac-view-tabs > button {
+    font-size: 14px;
+  }
+  .vac-summary small {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1199px) {
+  .vac-calendar-layout {
+    grid-template-columns: minmax(0, 1fr) 230px;
+    gap: 16px;
+  }
+  .vac-calendar-surface {
+    padding: 16px 12px;
+  }
+  .vac-day {
+    height: 68px;
+    padding: 5px 3px;
+  }
+  .vac-day-entry {
+    font-size: 9px;
+  }
+  .vac-workspace .vac-calendar-grid {
+    border-spacing: 2px;
+  }
+  .vac-calendar-header {
+    gap: 8px;
+  }
+  .vac-month-title {
+    font-size: 15px !important;
+  }
+  .vac-summary > button {
+    padding: 16px 14px;
+    gap: 10px;
+  }
+  .vac-summary > button > span:nth-child(2) {
+    gap: 6px;
+  }
+  .vac-summary-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .vac-summary > button > svg {
+    display: none;
+  }
+  .vac-summary small {
+    font-size: 10px;
+  }
+  .vac-summary strong {
+    font-size: 23px;
+  }
+}
+@media (max-width: 959px) {
+  .vac-calendar-layout {
+    grid-template-columns: 1fr;
+  }
+  .vac-day {
+    height: 74px;
+  }
+  .vac-day-entry {
+    font-size: 10px;
+  }
+  .vac-agenda-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .vac-agenda > .vac-empty {
+    padding: 28px;
+  }
+  .vac-keyboard-hint {
+    display: none;
+  }
+  .vac-toolbar-actions {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .vac-team-filter {
+    max-width: 190px;
+  }
+}
+@media (max-width: 759px) {
+  .vac-workspace-toolbar {
+    gap: 16px;
+  }
+  .vac-view-tabs {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .vac-view-tabs > button {
+    flex: 1;
+    justify-content: center;
+    font-size: 12px;
+    padding: 9px 10px;
+    gap: 6px;
+  }
+  .vac-toolbar-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+  }
+  .vac-team-filter {
+    max-width: none;
+    padding: 0 10px;
+  }
+  .vac-team-filter > svg {
+    display: none;
+  }
+  .vac-team-filter select {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    font-size: 11px;
+    padding: 12px 0;
+  }
+  .vac-toolbar-actions > .button {
+    padding: 12px 14px;
+    font-size: 11px !important;
+    min-height: 44px;
+  }
+  .vac-summary {
+    margin-bottom: 20px;
+  }
+  .vac-summary > button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px 10px;
+  }
+  .vac-summary-icon {
+    display: none;
+  }
+  .vac-summary > button > span:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vac-summary strong {
+    font-size: 24px;
+  }
+  .vac-summary small {
+    font-size: 10px;
+  }
+  .vac-calendar-surface {
+    padding: 16px 10px;
+  }
+  .vac-calendar-header {
+    padding: 0 4px;
+  }
+  .vac-month-title {
+    font-size: 16px !important;
+  }
+  .vac-month-controls > button {
+    width: 32px;
+    height: 32px;
+  }
+  .vac-month-controls > .vac-today-button {
+    padding: 0 10px;
+  }
+  .vac-day {
+    height: 52px;
+    padding: 4px;
+    align-items: center;
+    gap: 2px;
+  }
+  .vac-day time {
+    font-size: 12px;
+    align-self: center;
+    min-width: 22px;
+    height: 22px;
+  }
+  .vac-day-entries {
+    display: none;
+  }
+  .vac-mobile-day-count {
+    display: grid;
+    place-items: center;
+    background: #d9d6ed;
+    color: #10122a;
+    border-radius: 999px;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 3px;
+    font-size: 9px;
+  }
+  .vac-calendar-legend {
+    font-size: 9px;
+    gap: 10px;
+    padding-left: 4px;
+  }
+  .vac-agenda-list {
+    display: block;
+  }
+  .vac-agenda > header {
+    padding: 20px;
+  }
+  .vac-agenda > .vac-empty {
+    padding: 28px 20px;
+  }
+  .vac-request-toolbar {
+    padding: 20px;
+    gap: 18px;
+  }
+  .vac-request-controls {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .vac-query {
+    padding: 10px;
+    gap: 6px;
+  }
+  .vac-query input {
+    width: 100%;
+    font-size: 11px;
+  }
+  .vac-query > svg {
+    width: 14px;
+  }
+  .vac-request-controls > select {
+    padding: 10px;
+    font-size: 11px;
+    max-width: 150px;
+  }
+  .vac-result-count {
+    padding: 0 20px 14px;
+  }
+  .vac-request-row {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    gap: 8px 12px;
+    padding: 18px 16px;
+  }
+  .vac-request-row > .vac-person-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    grid-row: 1/3;
+    align-self: start;
+  }
+  .vac-request-person {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .vac-request-person strong {
+    font-size: 13px;
+  }
+  .vac-request-person small {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .vac-request-days {
+    grid-column: 3;
+    grid-row: 1;
+    min-width: 0;
+    align-self: center;
+    gap: 3px;
+  }
+  .vac-request-days strong {
+    font-size: 16px;
+  }
+  .vac-request-row > .badge {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+    justify-self: start;
+    font-size: 9px;
+  }
+  .vac-request-open {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 10px;
+    min-width: 0;
+  }
+  .vac-request-open svg {
+    width: 12px;
+  }
+  .vac-balance-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 16px;
+  }
+  .vac-section-title {
+    padding: 20px 20px 0;
+  }
+  .vac-balance-card {
+    padding: 20px;
+  }
+  .vac-available strong {
+    font-size: 32px;
+  }
+  .vac-balance-card h3 {
+    font-size: 14px;
+  }
+  .vac-balance-card header p {
+    font-size: 11px;
+  }
+  .vac-explanation {
+    margin: 0 20px 20px;
+  }
+  .vac-detail-heading {
+    flex-wrap: wrap;
+  }
+  .vac-detail-heading > .badge {
+    margin-left: 46px;
+  }
+  .vac-detail-heading > div {
+    min-width: 200px;
+  }
+  .vac-filter-context {
+    font-size: 11px;
+  }
+}
+.vac-request-explanation {
+  font-size: 12px;
+  color: #6b6d7e;
+}
+.vac-request-explanation summary {
+  cursor: pointer;
+  color: #35466e;
+}
+.vac-request-explanation p {
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+@media (max-width: 380px) {
+  .vac-view-tabs {
+    min-width: 0;
+  }
+  .vac-view-tabs > button {
+    min-width: 0;
+    gap: 4px;
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  .vac-view-tabs > button > svg {
+    display: none;
+  }
+  .vac-request-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .vac-request-controls > select {
+    max-width: none;
+  }
+  .vac-detail-heading > div {
+    min-width: 0;
+  }
+}
