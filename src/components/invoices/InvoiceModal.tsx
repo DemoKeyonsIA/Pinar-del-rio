@@ -141,36 +141,16 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
             </div>
           </div>
 
-          {/* Breakdown Table */}
-          <div className="border border-slate-200 rounded-xl overflow-hidden mb-6">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-slate-100/80 border-b border-slate-200 text-slate-600 font-semibold uppercase tracking-wider text-[11px]">
-                <tr>
-                  <th className="py-2.5 px-4">Concepto / Rubro Condominal</th>
-                  <th className="py-2.5 px-4 text-right">Monto (CRC)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {invoice.items.map((item, idx) => (
-                  <tr key={idx} className="hover:bg-slate-50/50">
-                    <td className="py-2.5 px-4 text-slate-700">{item.concept}</td>
-                    <td className="py-2.5 px-4 text-right font-mono text-slate-900 tabular-nums">
-                      ₡{item.amount.toLocaleString('es-CR')}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-              <tfoot className="bg-slate-50 font-semibold border-t border-slate-200">
-                <tr>
-                  <td className="py-3 px-4 text-slate-800 font-bold text-sm">TOTAL A PAGAR:</td>
-                  <td className="py-3 px-4 text-right font-mono text-emerald-800 font-bold text-base tabular-nums">
-                    ₡{invoice.total.toLocaleString('es-CR')}
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
+          {/* Invoice total */}
+          <section aria-label="Resumen de la cuota" className="border border-slate-200 rounded-xl bg-slate-50 p-4 mb-6">
+            <p className="text-xs text-slate-600 mb-2">Cuota condominal</p>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <span className="text-slate-800 font-bold text-sm">TOTAL A PAGAR:</span>
+              <strong className="font-mono text-emerald-800 font-bold text-lg tabular-nums">
+                ₡{invoice.total.toLocaleString('es-CR')}
+              </strong>
+            </div>
+          </section>
           {/* Legal Footnote & Signature */}
           <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 text-[11px] text-slate-500">
             <div className="max-w-xs space-y-1">
@@ -207,3 +187,4 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
     </div>
   );
 };
+
